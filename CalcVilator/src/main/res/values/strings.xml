@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CalcVilator</string>
+    <string name="action_settings">Settings</string>
+    <string name="startup_text">Calculus Calculator</string>
+    <string name="app_by">- By Joshi Viral H.</string>
+
+
+    <!-- Home activity Strings and options -->
+    <string name="home_title_msg">I am still developing this app for more Calculus functions and problems. I\'ll keep you updated with new features.</string>
+    <string name="home_reg_calc">Calculator</string>
+    <string name="home_sci_calc">Scientific Calculator</string>
+    <string name="home_com_soon">Other options coming soon!</string>
+
+    <!-- Calculator common strings -->
+    <string name="enter_here">Start calculating</string>
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+    <string name="n6">6</string>
+    <string name="n7">7</string>
+    <string name="n8">8</string>
+    <string name="n9">9</string>
+    <string name="n0">0</string>
+    <string name="nEQ">&#61;</string>
+    <string name="nPL">&#43;</string>
+    <string name="nMI">&#8722;</string>
+    <string name="nMU">&#215;</string>
+    <string name="nDI">&#247;</string>
+    <string name="nDLt">&#8592;</string>
+    <string name="nDOT">&#8901;</string>
+    <string name="nCLS">Clear</string>
+    <string name="nROOT">&#8730;</string>
+
+</resources>

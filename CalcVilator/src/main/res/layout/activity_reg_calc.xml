@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_calculated"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="35sp"
+            android:textColor="#8e44ad"
+            android:gravity="end"
+            android:id="@+id/calc_display"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#DADFE1"
+            android:height="1dp"
+            android:layout_below="@+id/calc_display"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_calculated"
+        android:layout_marginTop="5dp"
+        android:id="@+id/calcEditor"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="30sp"
+            android:textColor="#16a085"
+            android:gravity="right"
+            android:id="@+id/calc_ent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:ellipsize="end"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:hint="Input"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:height="1dp"
+            android:layout_below="@+id/calc_ent"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calcEditor"
+        android:layout_marginTop="5dp"
+        android:id="@+id/calcStack"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textColor="#e74c3c"
+            android:gravity="right"
+            android:id="@+id/displayStack"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:ellipsize="end"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+
+    </RelativeLayout>
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#ecf0f1">
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nCLS"
+            android:layout_weight=".50"
+            android:textSize="35sp"
+            android:textAllCaps="false"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_CLS"
+            android:background="#52B3D9"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nROOT"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_SR"
+            android:background="#81CFE0"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nDLt"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_DLT"
+            android:background="#81CFE0"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n7"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N7"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n8"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N8"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n9"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N9"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nDI"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_DIV"
+            android:background="#6BB9F0"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n4"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N4"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n5"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N5"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n6"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N6"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nMU"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_MUL"
+            android:background="#6BB9F0"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n1"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n2"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N2"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n3"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N3"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nMI"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_MI"
+            android:background="#6BB9F0"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nDOT"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_DOT"
+            android:background="#81CFE0"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/n0"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_N0"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nEQ"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_EQ"
+            android:background="#81CFE0"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nPL"
+            android:layout_weight=".25"
+            android:textSize="35sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/cal_PL"
+            android:background="#6BB9F0"/>
+    </TableRow>
+
+</TableLayout>>
+
+</RelativeLayout>
