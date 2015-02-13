@@ -8,6 +8,9 @@ learn android development.
 This is open source project and available for everyone to download and edit
 source codes. I use custom keyboard just to give it a try.
 
+Min Android version 4.1 Jelly Bean
+##################################
+
 Viral Joshi
 
 Happy Coding
