@@ -227,7 +227,8 @@ public class RegCalcActivity extends Activity {
                 //converting square root to string
                 //String sr = String.valueOf(formatter.format(Math.sqrt(new Double(inputKB.getText().toString()))));
 
-                if(inputKB.getText().toString() != null && inputKB.getText().toString().length()>0) {
+                try{
+                    if(inputKB.getText().toString() != null && inputKB.getText().toString().length()>0) {
                     /*
                     if(sr.contains("."))
                         calcDisplay.setText(NumberFormat.getInstance().format(sr));
@@ -235,23 +236,32 @@ public class RegCalcActivity extends Activity {
                         calcDisplay.setText(formatter.format(sr));
                     */
 
-                    String sr = String.valueOf(formatter.format(Math.sqrt(new Double(inputKB.getText().toString().replace(",", "")))));
-                    calcDisplay.setText(sr);
+                        String sr = String.valueOf(formatter.format(Math.sqrt(new Double(inputKB.getText().toString().replace(",", "")))));
+                        calcDisplay.setText(sr);
 
-                    inputKB.setText("");
+                        inputKB.setText("");
+
+                        holder = Double.parseDouble(calcDisplay.getText().toString().replace(",", ""));
+                    }
+                    else if(calcDisplay.getText().toString() != null && calcDisplay.getText().toString().length()>0) {
+
+                        String sr = String.valueOf(formatter.format(Math.sqrt(new Double(calcDisplay.getText().toString().replace(",", "")))));
+                        calcDisplay.setText(sr);
+
+                        inputKB.setText("");
+
+                        holder = Double.parseDouble(calcDisplay.getText().toString().replace(",", ""));
+                    }
+                    else{
+                        calcDisplay.setText("Error");
+                    }
+
+
                 }
-                else if(calcDisplay.getText().toString() != null && calcDisplay.getText().toString().length()>0) {
 
-                    String sr = String.valueOf(formatter.format(Math.sqrt(new Double(calcDisplay.getText().toString().replace(",", "")))));
-                    calcDisplay.setText(sr);
-
-                    inputKB.setText("");
+                catch(NumberFormatException e){
+                    //We are doing nothing here
                 }
-                else{
-                    calcDisplay.setText("Error");
-                }
-
-                holder = Double.parseDouble(calcDisplay.getText().toString().replace(",", ""));
             }
         });
 
