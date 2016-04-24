@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FinalAndroidApp</string>
+    <string name="world_flag_quiz">World Flag Quiz!</string>
+    <string name="play">Play</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

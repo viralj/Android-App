@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.viralj.finalandroidapp.StartActivity"
+    android:background="#00e5ff"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/world_flag_quiz"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:id="@+id/welcome_tv"/>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_btn"
+        android:text="@string/play"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="185dp"
+        style="?android:buttonBarButtonStyle"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textSize="20sp"
+        android:background="#ffc107"
+        android:textColor="#FFFFFF"
+        />
+    
+</RelativeLayout>
